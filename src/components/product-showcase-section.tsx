@@ -46,8 +46,8 @@ const products = [
     description:
       'Monitor real-time machine OEE, detect downtime patterns, and maximize plant productivity.',
     features: ['Live OEE & Efficiency', 'Smart Downtime Analytics', 'Plant Pulse Monitoring'],
-    ctaText: 'Coming Soon',
-    ctaUrl: '',
+    ctaText: 'Visit Flavi 360',
+    ctaUrl: 'https://crm.flavidairysolution.com/',
     Icon: Factory,
     gradient: 'from-orange-50 to-orange-100/60',
     border: 'border-orange-200',
