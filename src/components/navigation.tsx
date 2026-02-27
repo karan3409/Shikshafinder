@@ -9,6 +9,7 @@ export const Navigation = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
+    { name: 'Products', href: '#products' },
     { name: 'Services', href: '#services' },
     { name: 'About', href: '#about' },
     { name: 'Portfolio', href: '#portfolio' },
