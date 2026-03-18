@@ -49,7 +49,7 @@ export const ITHeroSection = ({
               style={{
                 transform: "translate(-50%, -50%)",
               }}
-              className="absolute left-1/2 top-1/2 -z-10 mx-auto size-[800px] rounded-full border p-16 [mask-image:linear-gradient(to_top,transparent,transparent,white,white,white,transparent,transparent)] md:size-[1300px] md:p-32"
+              className="absolute left-1/2 top-1/2 -z-10 mx-auto size-[800px] rounded-full border p-16 [mask-image:radial-gradient(ellipse_200%_40%,white_0%,white_40%,transparent_70%)] md:size-[1300px] md:p-32"
             >
               <div className="size-full rounded-full border p-16 md:p-32">
                 <div className="size-full rounded-full border"></div>
@@ -117,15 +117,15 @@ export const ITHeroSection = ({
           </div>
           
           <div className="mx-auto flex flex-wrap items-center justify-center gap-8 pt-4">
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
               <Code2 className="size-5" />
               <span>Custom Development</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
               <Server className="size-5" />
               <span>Cloud Solutions</span>
             </div>
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
               <Zap className="size-5" />
               <span>24/7 Support</span>
             </div>

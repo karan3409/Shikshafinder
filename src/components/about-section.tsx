@@ -1,10 +1,11 @@
 import React from 'react';
 import { Users, Award, TrendingUp } from 'lucide-react';
+import { NumberTicker } from '@/components/ui/number-ticker';
 
 const stats = [
-  { icon: <Users className="size-6" />, value: '500+', label: 'Happy Clients' },
-  { icon: <Award className="size-6" />, value: '20+', label: 'Years Experience' },
-  { icon: <TrendingUp className="size-6" />, value: '1000+', label: 'Projects Completed' },
+  { icon: <Users className="size-6" />, value: 500, label: 'Happy Clients' },
+  { icon: <Award className="size-6" />, value: 20, label: 'Years Experience' },
+  { icon: <TrendingUp className="size-6" />, value: 1000, label: 'Projects Completed' },
 ];
 
 export const AboutSection = () => {
@@ -43,7 +44,10 @@ export const AboutSection = () => {
                 <div className="mb-4 flex justify-center text-primary">
                   {stat.icon}
                 </div>
-                <div className="text-3xl font-bold mb-2">{stat.value}</div>
+                <div className="text-3xl font-bold mb-2">
+                  <NumberTicker value={stat.value} className="inline" />
+                  <span>+</span>
+                </div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}

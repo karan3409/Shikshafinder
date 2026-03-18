@@ -1,5 +1,6 @@
 import React from 'react';
 import { Cloud, Shield, Code, Database, Smartphone, Network } from 'lucide-react';
+import { MagicCard } from '@/components/ui/magic-card';
 
 const services = [
   {
@@ -57,16 +58,19 @@ export const ServicesSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <div
+            <MagicCard
               key={index}
-              className="p-6 rounded-lg border bg-card hover:shadow-lg transition-shadow"
+              className="h-full"
+              gradientSize={300}
+              gradientColor="#3b82f6"
+              gradientOpacity={0.1}
             >
               <div className="mb-4 text-primary">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-muted-foreground">{service.description}</p>
-            </div>
+            </MagicCard>
           ))}
         </div>
       </div>

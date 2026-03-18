@@ -200,7 +200,7 @@ export const ProductShowcaseSection = () => {
             <div className="h-2.5 w-20 bg-white border-y border-gray-200" />
             <div className="h-2.5 w-20 rounded-r-full bg-[#138808]" />
           </div>
-          <p className="text-sm font-semibold tracking-widest text-muted-foreground uppercase">
+          <p className="text-sm font-semibold tracking-widest text-muted-foreground uppercase hover:text-primary transition-colors">
             Made in India &nbsp;·&nbsp; Made for India
           </p>
         </div>

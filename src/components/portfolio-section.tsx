@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ExternalLink } from 'lucide-react';
+import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 
 const projects = [
   {
@@ -106,22 +107,22 @@ export const PortfolioSection = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group rounded-lg border bg-card overflow-hidden hover:shadow-lg transition-shadow"
+              className="group rounded-lg border bg-card overflow-hidden hover:shadow-xl transition-all duration-300"
             >
-              <div className="relative h-48 overflow-hidden">
+              <DirectionAwareHover className="relative h-48 overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
                   width={400}
                   height={192}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute top-4 right-4">
-                  <span className="px-3 py-1 rounded-full bg-background/90 text-xs font-medium">
+                  <span className="px-3 py-1 rounded-full bg-background/90 text-xs font-medium backdrop-blur-sm">
                     {project.category}
                   </span>
                 </div>
-              </div>
+              </DirectionAwareHover>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-muted-foreground mb-4">{project.description}</p>
